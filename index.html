@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Subhadra Jewellers</title>
 
+  <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -66,6 +69,7 @@
       background:
       linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
       url('20260528_110452.jpg');
+
       background-size:cover;
       background-position:center;
       display:flex;
@@ -86,6 +90,7 @@
       font-size:18px;
       color:#ddd;
       max-width:700px;
+      margin-inline:auto;
     }
 
     .btns{
@@ -188,7 +193,8 @@
       margin-bottom:10px;
     }
 
-    .card p,a{
+    .card p,
+    .card a{
       color:#ccc;
       text-decoration:none;
     }
@@ -203,14 +209,17 @@
 
     .gallery img{
       width:100%;
-      border-radius:16px;
+      height:240px;
+      object-fit:cover;
+      border-radius:18px;
       transition:0.4s;
       border:2px solid rgba(255,215,0,0.15);
+      background:#111;
     }
 
     .gallery img:hover{
-      transform:scale(1.03);
-      box-shadow:0 0 20px rgba(255,215,0,0.2);
+      transform:scale(1.04);
+      box-shadow:0 0 25px rgba(255,215,0,0.25);
     }
 
     /* MAP */
@@ -257,6 +266,8 @@
       color:black;
     }
 
+    /* RESPONSIVE */
+
     @media(max-width:768px){
 
       nav{
@@ -267,18 +278,38 @@
         font-size:20px;
       }
 
+      nav a{
+        margin-left:12px;
+        font-size:14px;
+      }
+
       .hero-content h1{
         font-size:42px;
       }
 
-      .gallery{
-        grid-template-columns:repeat(2,1fr);
+      .hero-content p{
+        font-size:15px;
       }
 
       section{
         padding:80px 5%;
       }
+
+      .section-title{
+        font-size:32px;
+      }
+
+      .gallery{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+      }
+
+      .gallery img{
+        height:170px;
+      }
+
     }
+
   </style>
 </head>
 
@@ -287,6 +318,7 @@
   <!-- NAVBAR -->
 
   <nav>
+
     <h2>Subhadra Jewellers</h2>
 
     <div>
@@ -294,6 +326,7 @@
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </div>
+
   </nav>
 
   <!-- HERO -->
@@ -301,6 +334,7 @@
   <section class="hero">
 
     <div class="hero-content">
+
       <h1>Luxury Jewellery Collection</h1>
 
       <p>
@@ -319,6 +353,7 @@
         </a>
 
       </div>
+
     </div>
 
   </section>
@@ -339,8 +374,8 @@
           Welcome to Subhadra Jewellers, your trusted destination for
           premium jewellery designs in Titvala, Kalyan.
           We specialize in elegant gold jewellery collections,
-          bridal jewellery, necklaces, earrings, and modern luxury designs.
-          Our mission is to provide beautiful craftsmanship with trust and quality.
+          bridal jewellery, necklaces, earrings, bangles, rings,
+          and modern luxury designs.
         </p>
 
         <div class="info-grid">
@@ -370,6 +405,7 @@
             <a href="https://www.instagram.com/subhadra_jewelers_titwala/" target="_blank">
               @subhadra_jewelers_titwala
             </a>
+
           </div>
 
         </div>
@@ -388,6 +424,8 @@
 
     <div class="gallery">
 
+      <!-- OLD IMAGES -->
+
       <img src="20260528_110452.jpg" alt="">
       <img src="20260528_110516.jpg" alt="">
       <img src="20260528_110529.jpg" alt="">
@@ -396,11 +434,42 @@
       <img src="20260528_110615.jpg" alt="">
       <img src="20260528_110629.jpg" alt="">
 
+      <!-- NEW IMAGES -->
+
+      <img src="IMG-20260528-WA0003.jpg" alt="">
+      <img src="IMG-20260528-WA0004.jpg" alt="">
+      <img src="IMG-20260528-WA0005.jpg" alt="">
+      <img src="IMG-20260528-WA0006.jpg" alt="">
+      <img src="IMG-20260528-WA0007.jpg" alt="">
+      <img src="IMG-20260528-WA0008.jpg" alt="">
+      <img src="IMG-20260528-WA0009.jpg" alt="">
+      <img src="IMG-20260528-WA0010.jpg" alt="">
+      <img src="IMG-20260528-WA0011.jpg" alt="">
+      <img src="IMG-20260528-WA0012.jpg" alt="">
+      <img src="IMG-20260528-WA0013.jpg" alt="">
+      <img src="IMG-20260528-WA0014.jpg" alt="">
+      <img src="IMG-20260528-WA0015.jpg" alt="">
+      <img src="IMG-20260528-WA0016.jpg" alt="">
+      <img src="IMG-20260528-WA0017.jpg" alt="">
+      <img src="IMG-20260528-WA0018.jpg" alt="">
+      <img src="IMG-20260528-WA0019.jpg" alt="">
+      <img src="IMG-20260528-WA0021.jpg" alt="">
+      <img src="IMG-20260528-WA0022.jpg" alt="">
+      <img src="IMG-20260528-WA0023.jpg" alt="">
+      <img src="IMG-20260528-WA0024.jpg" alt="">
+      <img src="IMG-20260528-WA0025.jpg" alt="">
+      <img src="IMG-20260528-WA0026.jpg" alt="">
+      <img src="IMG-20260528-WA0027.jpg" alt="">
+      <img src="IMG-20260528-WA0028.jpg" alt="">
+      <img src="IMG-20260528-WA0030.jpg" alt="">
+      <img src="IMG-20260528-WA0031.jpg" alt="">
+      <img src="IMG-20260528-WA0032.jpg" alt="">
+
     </div>
 
   </section>
 
-  <!-- MAP -->
+  <!-- CONTACT -->
 
   <section id="contact">
 
@@ -428,6 +497,8 @@
 
     </div>
 
+    <!-- GOOGLE MAP -->
+
     <iframe
       src="https://www.google.com/maps?q=Titvala,Kalyan,Maharashtra%20421605&output=embed"
       allowfullscreen=""
@@ -444,7 +515,7 @@
 
     <div class="socials">
 
-      <a href="https://www.instagram.com/subhadra_jewelers_titwala/" target="_blank">
+      <a href="https://www.instagram.com/subhadra_jewellers_titwala/" target="_blank">
         <i class="fa-brands fa-instagram"></i>
       </a>
 
